@@ -19,11 +19,18 @@ pub fn run() -> Result<()> {
     let paths = Paths::new()?;
 
     match cli.command {
+        Command::Config => show_config_dir(&paths),
         Command::List => list_themes(&paths),
         Command::Current => show_current_theme(&paths),
         Command::Reset => handle_reset(&paths),
         Command::Set(args) => handle_set_theme(&paths, args),
     }
+}
+
+fn show_config_dir(paths: &Paths) -> Result<()> {
+    println!("{}", paths.hue_root.display());
+
+    Ok(())
 }
 
 fn list_themes(paths: &Paths) -> Result<()> {

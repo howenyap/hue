@@ -13,6 +13,8 @@ pub struct Cli {
 
 #[derive(Subcommand)]
 pub enum Command {
+    #[command(about = "Print the config directory path")]
+    Config,
     #[command(about = "List available themes")]
     List,
     #[command(about = "Show current theme")]

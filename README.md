@@ -30,6 +30,7 @@ Please create an issue or PR if you'd like to add support for other targets.
 - `hue reset` removes `~/.config/hue`, it will be lazily reinitiliased by other commands
 - `hue set <theme>` sets a logical theme and synchronises it across targets
 - `hue set <theme> --dry-run` shows a diff of the update without applying any changes
+- `hue config` prints the config directory
 
 # Development
 Make sure you have [Rust](https://rust-lang.org/tools/install/) installed.
