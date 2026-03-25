@@ -16,3 +16,4 @@ Please create an issue or PR if you'd like to add support for other targets.
 - `hue current` prints out the current set theme
 - `hue list` prints out available themes
 - `hue set <theme>` sets a logical theme and synchronises it across targets
+- `hue set <theme> --dry-run` shows a diff of the update without applying any changes
