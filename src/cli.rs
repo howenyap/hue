@@ -13,14 +13,17 @@ pub struct Cli {
 
 #[derive(Subcommand)]
 pub enum Command {
+    #[command(about = "List available themes")]
     List,
+    #[command(about = "Show current theme")]
     Current,
+    #[command(about = "Set the current theme")]
     Set(SetArgs),
 }
 
 #[derive(Args)]
 pub struct SetArgs {
     pub theme: String,
-    #[arg(long, help = "Preview changes without writing files")]
+    #[arg(long, help = "Preview changes")]
     pub dry_run: bool,
 }
