@@ -13,15 +13,25 @@ use crate::ui::diff;
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Target {
     Ghostty,
+    Helix,
     Zed,
 }
 
 impl Target {
-    pub const ALL: [Self; 2] = [Self::Ghostty, Self::Zed];
+    pub const ALL: [Self; 3] = [Self::Ghostty, Self::Helix, Self::Zed];
+
+    pub fn catalog(&self) -> &'static str {
+        match self {
+            Self::Ghostty => include_str!("../themes/ghostty.toml"),
+            Self::Helix => include_str!("../themes/helix.toml"),
+            Self::Zed => include_str!("../themes/zed.toml"),
+        }
+    }
 
     pub fn label(&self) -> &'static str {
         match self {
             Self::Ghostty => "ghostty",
+            Self::Helix => "helix",
             Self::Zed => "zed",
         }
     }
@@ -29,6 +39,7 @@ impl Target {
     pub fn mapped_theme<'a>(&self, mapping: &'a ThemeMapping) -> Option<&'a str> {
         match self {
             Self::Ghostty => mapping.ghostty.as_deref(),
+            Self::Helix => mapping.helix.as_deref(),
             Self::Zed => mapping.zed.as_deref(),
         }
     }
@@ -36,6 +47,7 @@ impl Target {
     pub fn config_path(&self, paths: &Paths) -> PathBuf {
         match self {
             Self::Ghostty => paths.home.join(".config/ghostty/config"),
+            Self::Helix => paths.home.join(".config/helix/config.toml"),
             Self::Zed => paths.home.join(".config/zed/settings.json"),
         }
     }
@@ -43,6 +55,7 @@ impl Target {
     pub fn apply_theme(&self, contents: &str, theme: &str) -> Result<String> {
         match self {
             Self::Ghostty => Ok(patch_ghostty(contents, theme)),
+            Self::Helix => Ok(patch_helix(contents, theme)),
             Self::Zed => patch_zed(contents, theme),
         }
     }
@@ -143,6 +156,27 @@ pub fn patch_ghostty(contents: &str, theme: &str) -> String {
         *line = format!("theme = {theme}");
     } else {
         lines.push(format!("theme = {theme}"));
+    }
+
+    format!("{}\n", lines.join("\n"))
+}
+
+pub fn patch_helix(contents: &str, theme: &str) -> String {
+    let mut lines: Vec<String> = contents.lines().map(str::to_owned).collect();
+
+    if let Some(line) = lines.iter_mut().find(|line| {
+        let trimmed = line.trim();
+        let is_comment = trimmed.starts_with('#');
+        let is_theme_line = trimmed
+            .split_once('=')
+            .map(|(key, _)| key.trim() == "theme")
+            .unwrap_or(false);
+
+        !is_comment && is_theme_line
+    }) {
+        *line = format!("theme = \"{theme}\"");
+    } else {
+        lines.push(format!("theme = \"{theme}\""));
     }
 
     format!("{}\n", lines.join("\n"))

@@ -1,0 +1,80 @@
+[ayu-dark]
+name = "Ayu"
+
+[ayu-light]
+name = "Ayu Light"
+
+[ayu-mirage]
+name = "Ayu Mirage"
+
+[catppuccin-macchiato]
+name = "Catppuccin Macchiato"
+
+[catppuccin-mocha]
+name = "Catppuccin Mocha"
+
+[dracula]
+name = "Dracula"
+
+[flexoki-dark]
+name = "Flexoki Dark"
+
+[flexoki-light]
+name = "Flexoki Light"
+
+[github-dark]
+name = "GitHub Dark"
+
+[github-light]
+name = "GitHub Light Default"
+
+[gruvbox-dark]
+name = "Gruvbox Dark"
+
+[gruvbox-dark-hard]
+name = "Gruvbox Dark Hard"
+
+[gruvbox-light]
+name = "Gruvbox Light"
+
+[gruvbox-light-hard]
+name = "Gruvbox Light Hard"
+
+[kanagawa]
+name = "Kanagawa Wave"
+
+[kanagawa-wave]
+name = "Kanagawa Wave"
+
+[matte-black]
+name = "Matte Black"
+
+[night-owl]
+name = "Night Owl"
+
+[nord]
+name = "Nord"
+
+[rose-pine]
+name = "Rose Pine"
+
+[rose-pine-dawn]
+name = "Rose Pine Dawn"
+
+[rose-pine-moon]
+name = "Rose Pine Moon"
+
+[solarized-dark]
+name = "Solarized Dark Higher Contrast"
+
+[solarized-light]
+name = "Builtin Solarized Light"
+
+[tokyo-night]
+name = "TokyoNight"
+
+[tokyonight]
+name = "TokyoNight"
+
+[tokyonight-storm]
+name = "TokyoNight Storm"

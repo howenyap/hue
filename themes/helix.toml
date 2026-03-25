@@ -1,0 +1,251 @@
+[acme]
+name = "acme"
+
+[alabaster-dark]
+name = "alabaster_dark"
+
+[alabaster-dark-bg]
+name = "alabaster_dark_bg"
+
+[alabaster-dark-mono]
+name = "alabaster_dark_mono"
+
+[alabaster-light]
+name = "alabaster_light"
+
+[alabaster-light-bg]
+name = "alabaster_light_bg"
+
+[alabaster-light-mono]
+name = "alabaster_light_mono"
+
+[ashen]
+name = "ashen"
+
+[autumn]
+name = "autumn"
+
+[ayu-dark]
+name = "ayu_dark"
+
+[ayu-light]
+name = "ayu_light"
+
+[ayu-mirage]
+name = "ayu_mirage"
+
+[base16-default-dark]
+name = "base16_default_dark"
+
+[base16-default-light]
+name = "base16_default_light"
+
+[base16-terminal]
+name = "base16_terminal"
+
+[base16-transparent]
+name = "base16_transparent"
+
+[bogster]
+name = "bogster"
+
+[bogster-light]
+name = "bogster_light"
+
+[boo-berry]
+name = "boo_berry"
+
+[catppuccin-frappe]
+name = "catppuccin_frappe"
+
+[catppuccin-latte]
+name = "catppuccin_latte"
+
+[catppuccin-macchiato]
+name = "catppuccin_macchiato"
+
+[catppuccin-mocha]
+name = "catppuccin_mocha"
+
+[cyan-light]
+name = "cyan_light"
+
+[dark-high-contrast]
+name = "dark_high_contrast"
+
+[dark-plus]
+name = "dark_plus"
+
+[doom-acario-dark]
+name = "doom_acario_dark"
+
+[dracula]
+name = "dracula"
+
+[emacs]
+name = "emacs"
+
+[everforest-dark]
+name = "everforest_dark"
+
+[ferra]
+name = "ferra"
+
+[fleet-dark]
+name = "fleet_dark"
+
+[flatwhite]
+name = "flatwhite"
+
+[gruber-darker]
+name = "gruber-darker"
+
+[gruvbox]
+name = "gruvbox"
+
+[gruvbox-dark]
+name = "gruvbox_dark_hard"
+
+[gruvbox-dark-hard]
+name = "gruvbox_dark_hard"
+
+[gruvbox-light]
+name = "gruvbox_light"
+
+[heisenberg]
+name = "heisenberg"
+
+[hex-steel]
+name = "hex_steel"
+
+[hex-toxic]
+name = "hex_toxic"
+
+[ingrid]
+name = "ingrid"
+
+[jellybeans]
+name = "jellybeans"
+
+[kanagawa]
+name = "kanagawa"
+
+[kanagawa-wave]
+name = "kanagawa"
+
+[meliora]
+name = "meliora"
+
+[mellow]
+name = "mellow"
+
+[molokai]
+name = "molokai"
+
+[monokai]
+name = "monokai"
+
+[monokai-pro]
+name = "monokai_pro"
+
+[monokai-pro-machine]
+name = "monokai_pro_machine"
+
+[monokai-pro-octagon]
+name = "monokai_pro_octagon"
+
+[monokai-pro-ristretto]
+name = "monokai_pro_ristretto"
+
+[monokai-pro-spectrum]
+name = "monokai_pro_spectrum"
+
+[new-moon]
+name = "new_moon"
+
+[night-owl]
+name = "night_owl"
+
+[nightfox]
+name = "nightfox"
+
+[noctis]
+name = "noctis"
+
+[noctis-bordo]
+name = "noctis_bordo"
+
+[nord]
+name = "nord"
+
+[nord-light]
+name = "nord_light"
+
+[nord-night]
+name = "nord-night"
+
+[onedark]
+name = "onedark"
+
+[onedarker]
+name = "onedarker"
+
+[onelight]
+name = "onelight"
+
+[papercolor-dark]
+name = "papercolor-dark"
+
+[papercolor-light]
+name = "papercolor-light"
+
+[peachpuff]
+name = "peachpuff"
+
+[pop-dark]
+name = "pop-dark"
+
+[rasmus]
+name = "rasmus"
+
+[rose-pine]
+name = "rose_pine"
+
+[rose-pine-dawn]
+name = "rose_pine_dawn"
+
+[rose-pine-moon]
+name = "rose_pine_moon"
+
+[serika-dark]
+name = "serika-dark"
+
+[serika-light]
+name = "serika-light"
+
+[solarized-dark]
+name = "solarized_dark"
+
+[solarized-light]
+name = "solarized_light"
+
+[sonokai]
+name = "sonokai"
+
+[spacebones-light]
+name = "spacebones_light"
+
+[tokyo-night]
+name = "tokyonight"
+
+[tokyonight]
+name = "tokyonight"
+
+[tokyonight-storm]
+name = "tokyonight_storm"
+
+[varua]
+name = "varua"
+
+[zenburn]
+name = "zenburn"

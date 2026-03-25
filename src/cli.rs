@@ -1,7 +1,11 @@
 use clap::{Args, Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name = "hue", version, about = "Sync themes across Ghostty and Zed")]
+#[command(
+    name = "hue",
+    version,
+    about = "Sync themes across Ghostty, Helix, and Zed"
+)]
 pub struct Cli {
     #[command(subcommand)]
     pub command: Command,

@@ -3,7 +3,7 @@ name = "hue-cli"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
-description = "CLI to synchronise themes across Zed and Ghostty"
+description = "CLI to synchronise themes across Ghostty, Helix, and Zed"
 repository = "https://github.com/howenyap/hue"
 
 [lib]

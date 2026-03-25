@@ -8,7 +8,7 @@ use serde::{Deserialize, Serialize};
 use crate::error::Result;
 
 const CONFIG_FILE: &str = "config.toml";
-const CATALOG_FILE: &str = "themes.toml";
+const THEMES_DIR: &str = "themes";
 
 #[derive(Debug, Default, Serialize, Deserialize)]
 pub struct Config {
@@ -20,7 +20,7 @@ pub struct Paths {
     pub home: PathBuf,
     pub root: PathBuf,
     pub config: PathBuf,
-    pub catalog: PathBuf,
+    pub themes_dir: PathBuf,
 }
 
 impl Paths {
@@ -35,7 +35,7 @@ impl Paths {
         Ok(Self {
             home,
             config: root.join(CONFIG_FILE),
-            catalog: root.join(CATALOG_FILE),
+            themes_dir: root.join(THEMES_DIR),
             root,
         })
     }

@@ -1,11 +1,17 @@
 # Hue
-Hue is a CLI tool which synchronises themes across targets, check `themes.toml` for available mappings!
+Hue is a CLI tool which synchronises themes across targets. Check the files under `themes/` for the bundled per-target mappings. 
 
-You can also override the themes file locally for any other themes you have.
+You can also override the installed theme files locally for any other themes you may have.
 
 Currently, Hue supports the following targets:
 - [Ghostty](https://ghostty.org/)
+- [Helix](https://helix-editor.com/)
 - [Zed](https://zed.dev/)
+
+Bundled themes are installed into `~/.config/hue/themes/` as one file per target:
+- `ghostty.toml`
+- `helix.toml`
+- `zed.toml`
 
 Please create an issue or PR if you'd like to add support for other targets.
 

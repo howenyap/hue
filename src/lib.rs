@@ -68,7 +68,8 @@ fn handle_set_theme(paths: &Paths, args: SetArgs) -> Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use crate::target::{patch_ghostty, patch_zed};
+    use crate::catalog::merge_catalogs;
+    use crate::target::{Target, patch_ghostty, patch_helix, patch_zed};
     use jsonc_parser::ParseOptions;
     use jsonc_parser::cst::{CstObject, CstRootNode};
 
@@ -104,6 +105,30 @@ mod tests {
         let output = patch_ghostty(input, "New Theme");
 
         assert!(output.ends_with("theme = New Theme\n"));
+    }
+
+    #[test]
+    fn helix_theme_is_replaced() {
+        let input = r#"
+                        theme = "old"
+                        [editor]
+                        line-number = "relative"
+                    "#;
+        let output = patch_helix(input, "tokyonight");
+
+        assert!(output.contains(r#"theme = "tokyonight""#));
+        assert!(output.contains(r#"line-number = "relative""#));
+    }
+
+    #[test]
+    fn helix_theme_is_appended_if_missing() {
+        let input = r#"
+                        [editor]
+                        true-color = true
+                    "#;
+        let output = patch_helix(input, "tokyonight");
+
+        assert!(output.ends_with("theme = \"tokyonight\"\n"));
     }
 
     #[test]
@@ -147,5 +172,41 @@ mod tests {
         assert_eq!(object_string_prop(&theme, "light"), "New");
         assert_eq!(object_string_prop(&theme, "mode"), "dark");
         assert!(root.get("vim_mode").is_some());
+    }
+
+    #[test]
+    fn catalog_sources_are_merged_by_logical_name() {
+        let catalog = merge_catalogs(&[
+            (
+                Target::Ghostty,
+                r#"
+                [tokyo-night]
+                name = "TokyoNight"
+                "#
+                .to_string(),
+            ),
+            (
+                Target::Helix,
+                r#"
+                [tokyo-night]
+                name = "tokyonight"
+
+                [rose-pine]
+                name = "rose_pine"
+                "#
+                .to_string(),
+            ),
+        ])
+        .unwrap();
+
+        let tokyo_night = catalog.get("tokyo-night").unwrap();
+        assert_eq!(tokyo_night.ghostty.as_deref(), Some("TokyoNight"));
+        assert_eq!(tokyo_night.helix.as_deref(), Some("tokyonight"));
+        assert_eq!(tokyo_night.zed.as_deref(), None);
+
+        let rose_pine = catalog.get("rose-pine").unwrap();
+        assert_eq!(rose_pine.helix.as_deref(), Some("rose_pine"));
+        assert_eq!(rose_pine.ghostty.as_deref(), None);
+        assert_eq!(rose_pine.zed.as_deref(), None);
     }
 }

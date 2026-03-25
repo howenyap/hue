@@ -1,0 +1,80 @@
+[ayu-dark]
+name = "Ayu Dark"
+
+[ayu-light]
+name = "Ayu Light"
+
+[ayu-mirage]
+name = "Ayu Mirage"
+
+[catppuccin-macchiato] # https://zed.dev/extensions/catppuccin
+name = "Catppuccin Macchiato"
+
+[catppuccin-mocha] # https://zed.dev/extensions/catppuccin
+name = "Catppuccin Mocha"
+
+[dracula] # https://zed.dev/extensions/dracula
+name = "Dracula"
+
+[flexoki-dark]
+name = "Flexoki Dark"
+
+[flexoki-light]
+name = "Flexoki Light"
+
+[github-dark] # https://zed.dev/extensions/github-theme
+name = "GitHub Dark"
+
+[github-light] # https://zed.dev/extensions/github-theme
+name = "GitHub Light"
+
+[gruvbox-dark]
+name = "Gruvbox Dark"
+
+[gruvbox-dark-hard]
+name = "Gruvbox Dark Hard"
+
+[gruvbox-light]
+name = "Gruvbox Light"
+
+[gruvbox-light-hard]
+name = "Gruvbox Light Hard"
+
+[kanagawa]
+name = "Kanagawa"
+
+[kanagawa-wave]
+name = "Kanagawa"
+
+[matte-black] # https://zed.dev/extensions/matte-black-theme
+name = "Matte Black"
+
+[night-owl] # https://zed.dev/extensions/night-owl-theme
+name = "Night Owl"
+
+[nord] # https://zed.dev/extensions/nord-themes
+name = "Nord"
+
+[rose-pine] # https://zed.dev/extensions/rose-pine-theme
+name = "Rosé Pine"
+
+[rose-pine-dawn] # https://zed.dev/extensions/rose-pine-theme
+name = "Rosé Pine Dawn"
+
+[rose-pine-moon] # https://zed.dev/extensions/rose-pine-theme
+name = "Rosé Pine Moon"
+
+[solarized-dark]
+name = "Solarized"
+
+[solarized-light]
+name = "Solarized"
+
+[tokyo-night] # https://zed.dev/extensions/tokyo-night
+name = "Tokyo Night"
+
+[tokyonight] # https://zed.dev/extensions/tokyo-night
+name = "Tokyo Night"
+
+[tokyonight-storm] # https://zed.dev/extensions/tokyo-night
+name = "Tokyo Night"
