@@ -1,3 +1,90 @@
+[0x96f]
+name = "0x96f"
+
+[12-bit-rainbow]
+name = "12-bit Rainbow"
+
+[3024-day]
+name = "3024 Day"
+
+[3024-night]
+name = "3024 Night"
+
+[aardvark-blue]
+name = "Aardvark Blue"
+
+[abernathy]
+name = "Abernathy"
+
+[adventure]
+name = "Adventure"
+
+[adventure-time]
+name = "Adventure Time"
+
+[adwaita]
+name = "Adwaita"
+
+[adwaita-dark]
+name = "Adwaita Dark"
+
+[afterglow]
+name = "Afterglow"
+
+[aizen-dark]
+name = "Aizen Dark"
+
+[aizen-light]
+name = "Aizen Light"
+
+[alabaster]
+name = "Alabaster"
+
+[alien-blood]
+name = "Alien Blood"
+
+[andromeda]
+name = "Andromeda"
+
+[apple-classic]
+name = "Apple Classic"
+
+[apple-system-colors]
+name = "Apple System Colors"
+
+[apple-system-colors-light]
+name = "Apple System Colors Light"
+
+[arcoiris]
+name = "Arcoiris"
+
+[ardoise]
+name = "Ardoise"
+
+[argonaut]
+name = "Argonaut"
+
+[arthur]
+name = "Arthur"
+
+[atelier-sulphurpool]
+name = "Atelier Sulphurpool"
+
+[atom]
+name = "Atom"
+
+[atom-one-dark]
+name = "Atom One Dark"
+
+[atom-one-light]
+name = "Atom One Light"
+
+[aura]
+name = "Aura"
+
+[aurora]
+name = "Aurora"
+
 [ayu-dark]
 name = "Ayu"
 
@@ -7,14 +94,335 @@ name = "Ayu Light"
 [ayu-mirage]
 name = "Ayu Mirage"
 
+[banana-blueberry]
+name = "Banana Blueberry"
+
+[batman]
+name = "Batman"
+
+[belafonte-day]
+name = "Belafonte Day"
+
+[belafonte-night]
+name = "Belafonte Night"
+
+[birds-of-paradise]
+name = "Birds Of Paradise"
+
+[black-metal]
+name = "Black Metal"
+
+[black-metal-bathory]
+name = "Black Metal (Bathory)"
+
+[black-metal-burzum]
+name = "Black Metal (Burzum)"
+
+[black-metal-dark-funeral]
+name = "Black Metal (Dark Funeral)"
+
+[black-metal-gorgoroth]
+name = "Black Metal (Gorgoroth)"
+
+[black-metal-immortal]
+name = "Black Metal (Immortal)"
+
+[black-metal-khold]
+name = "Black Metal (Khold)"
+
+[black-metal-marduk]
+name = "Black Metal (Marduk)"
+
+[black-metal-mayhem]
+name = "Black Metal (Mayhem)"
+
+[black-metal-nile]
+name = "Black Metal (Nile)"
+
+[black-metal-venom]
+name = "Black Metal (Venom)"
+
+[blazer]
+name = "Blazer"
+
+[blue-berry-pie]
+name = "Blue Berry Pie"
+
+[blue-dolphin]
+name = "Blue Dolphin"
+
+[blue-matrix]
+name = "Blue Matrix"
+
+[bluloco-dark]
+name = "Bluloco Dark"
+
+[bluloco-light]
+name = "Bluloco Light"
+
+[borland]
+name = "Borland"
+
+[box]
+name = "Box"
+
+[branch]
+name = "branch"
+
+[breadog]
+name = "Breadog"
+
+[breeze]
+name = "Breeze"
+
+[bright-lights]
+name = "Bright Lights"
+
+[broadcast]
+name = "Broadcast"
+
+[brogrammer]
+name = "Brogrammer"
+
+[builtin-dark]
+name = "Builtin Dark"
+
+[builtin-light]
+name = "Builtin Light"
+
+[builtin-pastel-dark]
+name = "Builtin Pastel Dark"
+
+[builtin-tango-dark]
+name = "Builtin Tango Dark"
+
+[builtin-tango-light]
+name = "Builtin Tango Light"
+
+[c64]
+name = "C64"
+
+[calamity]
+name = "Calamity"
+
+[carbonfox]
+name = "Carbonfox"
+
+[catppuccin-frappe]
+name = "Catppuccin Frappe"
+
+[catppuccin-latte]
+name = "Catppuccin Latte"
+
 [catppuccin-macchiato]
 name = "Catppuccin Macchiato"
 
 [catppuccin-mocha]
 name = "Catppuccin Mocha"
 
+[cga]
+name = "CGA"
+
+[chalk]
+name = "Chalk"
+
+[chalkboard]
+name = "Chalkboard"
+
+[challenger-deep]
+name = "Challenger Deep"
+
+[chester]
+name = "Chester"
+
+[ciapre]
+name = "Ciapre"
+
+[citruszest]
+name = "Citruszest"
+
+[clrs]
+name = "CLRS"
+
+[cobalt-neon]
+name = "Cobalt Neon"
+
+[cobalt-next]
+name = "Cobalt Next"
+
+[cobalt-next-dark]
+name = "Cobalt Next Dark"
+
+[cobalt-next-minimal]
+name = "Cobalt Next Minimal"
+
+[cobalt2]
+name = "Cobalt2"
+
+[coffee-theme]
+name = "Coffee Theme"
+
+[crayon-pony-fish]
+name = "Crayon Pony Fish"
+
+[cursor-dark]
+name = "Cursor Dark"
+
+[cutie-pro]
+name = "Cutie Pro"
+
+[cyberdyne]
+name = "Cyberdyne"
+
+[cyberpunk]
+name = "Cyberpunk"
+
+[cyberpunk-scarlet-protocol]
+name = "Cyberpunk Scarlet Protocol"
+
+[dark-modern]
+name = "Dark Modern"
+
+[dark-pastel]
+name = "Dark Pastel"
+
+[dark-plus]
+name = "Dark+"
+
+[darkermatrix]
+name = "Darkermatrix"
+
+[darkmatrix]
+name = "Darkmatrix"
+
+[darkside]
+name = "Darkside"
+
+[dawnfox]
+name = "Dawnfox"
+
+[dayfox]
+name = "Dayfox"
+
+[deep]
+name = "Deep"
+
+[desert]
+name = "Desert"
+
+[detuned]
+name = "Detuned"
+
+[dimidium]
+name = "Dimidium"
+
+[dimmed-monokai]
+name = "Dimmed Monokai"
+
+[django]
+name = "Django"
+
+[django-reborn-again]
+name = "Django Reborn Again"
+
+[django-smooth]
+name = "Django Smooth"
+
+[doom-one]
+name = "Doom One"
+
+[doom-peacock]
+name = "Doom Peacock"
+
+[dot-gov]
+name = "Dot Gov"
+
 [dracula]
 name = "Dracula"
+
+[dracula-plus]
+name = "Dracula+"
+
+[duckbones]
+name = "Duckbones"
+
+[duotone-dark]
+name = "Duotone Dark"
+
+[duskfox]
+name = "Duskfox"
+
+[earthsong]
+name = "Earthsong"
+
+[electron-highlighter]
+name = "Electron Highlighter"
+
+[elegant]
+name = "Elegant"
+
+[elemental]
+name = "Elemental"
+
+[elementary]
+name = "Elementary"
+
+[embark]
+name = "Embark"
+
+[embers-dark]
+name = "Embers Dark"
+
+[encom]
+name = "ENCOM"
+
+[espresso]
+name = "Espresso"
+
+[espresso-libre]
+name = "Espresso Libre"
+
+[everblush]
+name = "Everblush"
+
+[everforest-dark-hard]
+name = "Everforest Dark Hard"
+
+[everforest-light-med]
+name = "Everforest Light Med"
+
+[fahrenheit]
+name = "Fahrenheit"
+
+[fairyfloss]
+name = "Fairyfloss"
+
+[farmhouse-dark]
+name = "Farmhouse Dark"
+
+[farmhouse-light]
+name = "Farmhouse Light"
+
+[fideloper]
+name = "Fideloper"
+
+[firefly-traditional]
+name = "Firefly Traditional"
+
+[firefox-dev]
+name = "Firefox Dev"
+
+[firewatch]
+name = "Firewatch"
+
+[fish-tank]
+name = "Fish Tank"
+
+[flat]
+name = "Flat"
+
+[flatland]
+name = "Flatland"
 
 [flexoki-dark]
 name = "Flexoki Dark"
@@ -22,11 +430,80 @@ name = "Flexoki Dark"
 [flexoki-light]
 name = "Flexoki Light"
 
+[floraverse]
+name = "Floraverse"
+
+[forest-blue]
+name = "Forest Blue"
+
+[framer]
+name = "Framer"
+
+[front-end-delight]
+name = "Front End Delight"
+
+[fun-forrest]
+name = "Fun Forrest"
+
+[galaxy]
+name = "Galaxy"
+
+[galizur]
+name = "Galizur"
+
+[ghostty-default-style-dark]
+name = "Ghostty Default Style Dark"
+
+[github]
+name = "GitHub"
+
 [github-dark]
 name = "GitHub Dark"
 
+[github-dark-colorblind]
+name = "GitHub Dark Colorblind"
+
+[github-dark-default]
+name = "GitHub Dark Default"
+
+[github-dark-dimmed]
+name = "GitHub Dark Dimmed"
+
+[github-dark-high-contrast]
+name = "GitHub Dark High Contrast"
+
 [github-light]
 name = "GitHub Light Default"
+
+[github-light-colorblind]
+name = "GitHub Light Colorblind"
+
+[github-light-high-contrast]
+name = "GitHub Light High Contrast"
+
+[gitlab-dark]
+name = "GitLab Dark"
+
+[gitlab-dark-grey]
+name = "GitLab Dark Grey"
+
+[gitlab-light]
+name = "GitLab Light"
+
+[glacier]
+name = "Glacier"
+
+[grape]
+name = "Grape"
+
+[grass]
+name = "Grass"
+
+[grey-green]
+name = "Grey Green"
+
+[gruber-darker]
+name = "Gruber Darker"
 
 [gruvbox-dark]
 name = "Gruvbox Dark"
@@ -40,20 +517,545 @@ name = "Gruvbox Light"
 [gruvbox-light-hard]
 name = "Gruvbox Light Hard"
 
+[gruvbox-material]
+name = "Gruvbox Material"
+
+[gruvbox-material-dark]
+name = "Gruvbox Material Dark"
+
+[gruvbox-material-light]
+name = "Gruvbox Material Light"
+
+[guezwhoz]
+name = "Guezwhoz"
+
+[hacktober]
+name = "Hacktober"
+
+[hardcore]
+name = "Hardcore"
+
+[harper]
+name = "Harper"
+
+[havn-daggry]
+name = "Havn Daggry"
+
+[havn-skumring]
+name = "Havn Skumring"
+
+[hax0r-blue]
+name = "HaX0R Blue"
+
+[hax0r-gr33n]
+name = "HaX0R Gr33N"
+
+[hax0r-r3d]
+name = "HaX0R R3D"
+
+[heeler]
+name = "Heeler"
+
+[highway]
+name = "Highway"
+
+[hipster-green]
+name = "Hipster Green"
+
+[hivacruz]
+name = "Hivacruz"
+
+[homebrew]
+name = "Homebrew"
+
+[hopscotch]
+name = "Hopscotch"
+
+[hopscotch-256]
+name = "Hopscotch.256"
+
+[horizon]
+name = "Horizon"
+
+[horizon-bright]
+name = "Horizon Bright"
+
+[hot-dog-stand]
+name = "Hot Dog Stand"
+
+[hot-dog-stand-mustard]
+name = "Hot Dog Stand (Mustard)"
+
+[hurtado]
+name = "Hurtado"
+
+[hybrid]
+name = "Hybrid"
+
+[ibm-5153-cga]
+name = "IBM 5153 CGA"
+
+[ibm-5153-cga-black]
+name = "IBM 5153 CGA (Black)"
+
+[ic-green-ppl]
+name = "IC Green PPL"
+
+[ic-orange-ppl]
+name = "IC Orange PPL"
+
+[iceberg-dark]
+name = "Iceberg Dark"
+
+[iceberg-light]
+name = "Iceberg Light"
+
+[idea]
+name = "Idea"
+
+[idle-toes]
+name = "Idle Toes"
+
+[ir-black]
+name = "IR Black"
+
+[irix-console]
+name = "IRIX Console"
+
+[irix-terminal]
+name = "IRIX Terminal"
+
+[iterm2-dark-background]
+name = "iTerm2 Dark Background"
+
+[iterm2-default]
+name = "iTerm2 Default"
+
+[iterm2-light-background]
+name = "iTerm2 Light Background"
+
+[iterm2-pastel-dark-background]
+name = "iTerm2 Pastel Dark Background"
+
+[iterm2-smoooooth]
+name = "iTerm2 Smoooooth"
+
+[iterm2-solarized-dark]
+name = "iTerm2 Solarized Dark"
+
+[iterm2-tango-dark]
+name = "iTerm2 Tango Dark"
+
+[iterm2-tango-light]
+name = "iTerm2 Tango Light"
+
+[jackie-brown]
+name = "Jackie Brown"
+
+[japanesque]
+name = "Japanesque"
+
+[jellybeans]
+name = "Jellybeans"
+
+[jetbrains-darcula]
+name = "JetBrains Darcula"
+
+[jubi]
+name = "Jubi"
+
 [kanagawa]
 name = "Kanagawa Wave"
+
+[kanagawa-dragon]
+name = "Kanagawa Dragon"
+
+[kanagawa-lotus]
+name = "Kanagawa Lotus"
 
 [kanagawa-wave]
 name = "Kanagawa Wave"
 
+[kanagawabones]
+name = "Kanagawabones"
+
+[kanso-ink]
+name = "Kanso Ink"
+
+[kanso-mist]
+name = "Kanso Mist"
+
+[kanso-pearl]
+name = "Kanso Pearl"
+
+[kanso-zen]
+name = "Kanso Zen"
+
+[kibble]
+name = "Kibble"
+
+[kitty-default]
+name = "Kitty Default"
+
+[kitty-low-contrast]
+name = "Kitty Low Contrast"
+
+[kolorit]
+name = "Kolorit"
+
+[konsolas]
+name = "Konsolas"
+
+[kurokula]
+name = "Kurokula"
+
+[lab-fox]
+name = "Lab Fox"
+
+[laser]
+name = "Laser"
+
+[later-this-evening]
+name = "Later This Evening"
+
+[lavandula]
+name = "Lavandula"
+
+[light-owl]
+name = "Light Owl"
+
+[liquid-carbon]
+name = "Liquid Carbon"
+
+[liquid-carbon-transparent]
+name = "Liquid Carbon Transparent"
+
+[lovelace]
+name = "Lovelace"
+
+[man-page]
+name = "Man Page"
+
+[mariana]
+name = "Mariana"
+
+[material]
+name = "Material"
+
+[material-dark]
+name = "Material Dark"
+
+[material-darker]
+name = "Material Darker"
+
+[material-design-colors]
+name = "Material Design Colors"
+
+[material-ocean]
+name = "Material Ocean"
+
+[mathias]
+name = "Mathias"
+
+[matrix]
+name = "Matrix"
+
 [matte-black]
 name = "Matte Black"
+
+[medallion]
+name = "Medallion"
+
+[melange-dark]
+name = "Melange Dark"
+
+[melange-light]
+name = "Melange Light"
+
+[mellifluous]
+name = "Mellifluous"
+
+[mellow]
+name = "Mellow"
+
+[miasma]
+name = "Miasma"
+
+[midnight-in-mojave]
+name = "Midnight In Mojave"
+
+[mirage]
+name = "Mirage"
+
+[misterioso]
+name = "Misterioso"
+
+[modus-operandi]
+name = "Modus Operandi"
+
+[modus-operandi-tinted]
+name = "Modus Operandi Tinted"
+
+[modus-vivendi]
+name = "Modus Vivendi"
+
+[modus-vivendi-tinted]
+name = "Modus Vivendi Tinted"
+
+[molokai]
+name = "Molokai"
+
+[mona-lisa]
+name = "Mona Lisa"
+
+[monokai-classic]
+name = "Monokai Classic"
+
+[monokai-pro]
+name = "Monokai Pro"
+
+[monokai-pro-light]
+name = "Monokai Pro Light"
+
+[monokai-pro-light-sun]
+name = "Monokai Pro Light Sun"
+
+[monokai-pro-machine]
+name = "Monokai Pro Machine"
+
+[monokai-pro-octagon]
+name = "Monokai Pro Octagon"
+
+[monokai-pro-ristretto]
+name = "Monokai Pro Ristretto"
+
+[monokai-pro-spectrum]
+name = "Monokai Pro Spectrum"
+
+[monokai-remastered]
+name = "Monokai Remastered"
+
+[monokai-soda]
+name = "Monokai Soda"
+
+[monokai-vivid]
+name = "Monokai Vivid"
+
+[moonfly]
+name = "Moonfly"
+
+[n0tch2k]
+name = "N0Tch2K"
+
+[neobones-dark]
+name = "Neobones Dark"
+
+[neobones-light]
+name = "Neobones Light"
+
+[neon]
+name = "Neon"
+
+[neopolitan]
+name = "Neopolitan"
+
+[neutron]
+name = "Neutron"
+
+[night-lion-v1]
+name = "Night Lion V1"
+
+[night-lion-v2]
+name = "Night Lion V2"
 
 [night-owl]
 name = "Night Owl"
 
+[night-owlish-light]
+name = "Night Owlish Light"
+
+[nightfox]
+name = "Nightfox"
+
+[niji]
+name = "Niji"
+
+[no-clown-fiesta]
+name = "No Clown Fiesta"
+
+[no-clown-fiesta-light]
+name = "No Clown Fiesta Light"
+
+[nocturnal-winter]
+name = "Nocturnal Winter"
+
 [nord]
 name = "Nord"
+
+[nord-light]
+name = "Nord Light"
+
+[nord-wave]
+name = "Nord Wave"
+
+[nordfox]
+name = "Nordfox"
+
+[novel]
+name = "Novel"
+
+[novmbr]
+name = "novmbr"
+
+[nvim-dark]
+name = "Nvim Dark"
+
+[nvim-light]
+name = "Nvim Light"
+
+[obsidian]
+name = "Obsidian"
+
+[ocean]
+name = "Ocean"
+
+[oceanic-material]
+name = "Oceanic Material"
+
+[oceanic-next]
+name = "Oceanic Next"
+
+[ollie]
+name = "Ollie"
+
+[one-dark-two]
+name = "One Dark Two"
+
+[one-double-dark]
+name = "One Double Dark"
+
+[one-double-light]
+name = "One Double Light"
+
+[one-half-dark]
+name = "One Half Dark"
+
+[one-half-light]
+name = "One Half Light"
+
+[onenord]
+name = "Onenord"
+
+[onenord-light]
+name = "Onenord Light"
+
+[operator-mono-dark]
+name = "Operator Mono Dark"
+
+[overnight-slumber]
+name = "Overnight Slumber"
+
+[owl]
+name = "owl"
+
+[oxocarbon]
+name = "Oxocarbon"
+
+[pale-night-hc]
+name = "Pale Night Hc"
+
+[pandora]
+name = "Pandora"
+
+[paraiso-dark]
+name = "Paraiso Dark"
+
+[paul-millr]
+name = "Paul Millr"
+
+[pencil-dark]
+name = "Pencil Dark"
+
+[pencil-light]
+name = "Pencil Light"
+
+[peppermint]
+name = "Peppermint"
+
+[phala-green-dark]
+name = "Phala Green Dark"
+
+[piatto-light]
+name = "Piatto Light"
+
+[pnevma]
+name = "Pnevma"
+
+[poimandres]
+name = "Poimandres"
+
+[poimandres-darker]
+name = "Poimandres Darker"
+
+[poimandres-storm]
+name = "Poimandres Storm"
+
+[poimandres-white]
+name = "Poimandres White"
+
+[popping-and-locking]
+name = "Popping And Locking"
+
+[powershell]
+name = "Powershell"
+
+[primary]
+name = "Primary"
+
+[pro]
+name = "Pro"
+
+[pro-light]
+name = "Pro Light"
+
+[purple-rain]
+name = "Purple Rain"
+
+[purplepeter]
+name = "Purplepeter"
+
+[rapture]
+name = "Rapture"
+
+[raycast-dark]
+name = "Raycast Dark"
+
+[raycast-light]
+name = "Raycast Light"
+
+[rebecca]
+name = "Rebecca"
+
+[red-alert]
+name = "Red Alert"
+
+[red-planet]
+name = "Red Planet"
+
+[red-sands]
+name = "Red Sands"
+
+[relaxed]
+name = "Relaxed"
+
+[retro]
+name = "Retro"
+
+[retro-legends]
+name = "Retro Legends"
+
+[rippedcasts]
+name = "Rippedcasts"
 
 [rose-pine]
 name = "Rose Pine"
@@ -64,11 +1066,179 @@ name = "Rose Pine Dawn"
 [rose-pine-moon]
 name = "Rose Pine Moon"
 
+[rouge-2]
+name = "Rouge 2"
+
+[royal]
+name = "Royal"
+
+[ryuuko]
+name = "Ryuuko"
+
+[sakura]
+name = "Sakura"
+
+[scarlet-protocol]
+name = "Scarlet Protocol"
+
+[sea-shells]
+name = "Sea Shells"
+
+[seafoam-pastel]
+name = "Seafoam Pastel"
+
+[selenized-black]
+name = "Selenized Black"
+
+[selenized-dark]
+name = "Selenized Dark"
+
+[selenized-light]
+name = "Selenized Light"
+
+[seoulbones-dark]
+name = "Seoulbones Dark"
+
+[seoulbones-light]
+name = "Seoulbones Light"
+
+[seti]
+name = "Seti"
+
+[shades-of-purple]
+name = "Shades Of Purple"
+
+[shaman]
+name = "Shaman"
+
+[slate]
+name = "Slate"
+
+[sleepy-hollow]
+name = "Sleepy Hollow"
+
+[smyck]
+name = "Smyck"
+
+[snazzy]
+name = "Snazzy"
+
+[snazzy-soft]
+name = "Snazzy Soft"
+
+[soft-server]
+name = "Soft Server"
+
+[solarized-darcula]
+name = "Solarized Darcula"
+
 [solarized-dark]
 name = "Solarized Dark Higher Contrast"
 
+[solarized-dark-patched]
+name = "Solarized Dark Patched"
+
 [solarized-light]
-name = "Builtin Solarized Light"
+name = "iTerm2 Solarized Light"
+
+[solarized-osaka-night]
+name = "Solarized Osaka Night"
+
+[sonokai]
+name = "Sonokai"
+
+[spacedust]
+name = "Spacedust"
+
+[spacegray]
+name = "Spacegray"
+
+[spacegray-bright]
+name = "Spacegray Bright"
+
+[spacegray-eighties]
+name = "Spacegray Eighties"
+
+[spacegray-eighties-dull]
+name = "Spacegray Eighties Dull"
+
+[spiderman]
+name = "Spiderman"
+
+[spring]
+name = "Spring"
+
+[square]
+name = "Square"
+
+[squirrelsong-dark]
+name = "Squirrelsong Dark"
+
+[srcery]
+name = "Srcery"
+
+[starlight]
+name = "Starlight"
+
+[sublette]
+name = "Sublette"
+
+[subliminal]
+name = "Subliminal"
+
+[sugarplum]
+name = "Sugarplum"
+
+[sundried]
+name = "Sundried"
+
+[sunset-drive]
+name = "Sunset Drive"
+
+[symfonic]
+name = "Symfonic"
+
+[synthwave]
+name = "Synthwave"
+
+[synthwave-alpha]
+name = "Synthwave Alpha"
+
+[synthwave-everything]
+name = "Synthwave Everything"
+
+[tango-adapted]
+name = "Tango Adapted"
+
+[tango-half-adapted]
+name = "Tango Half Adapted"
+
+[tearout]
+name = "Tearout"
+
+[teerb]
+name = "Teerb"
+
+[terafox]
+name = "Terafox"
+
+[terminal-basic]
+name = "Terminal Basic"
+
+[terminal-basic-dark]
+name = "Terminal Basic Dark"
+
+[thayer-bright]
+name = "Thayer Bright"
+
+[the-hulk]
+name = "The Hulk"
+
+[tinacious-design-dark]
+name = "Tinacious Design Dark"
+
+[tinacious-design-light]
+name = "Tinacious Design Light"
 
 [tokyo-night]
 name = "TokyoNight"
@@ -76,5 +1246,149 @@ name = "TokyoNight"
 [tokyonight]
 name = "TokyoNight"
 
+[tokyonight-day]
+name = "TokyoNight Day"
+
+[tokyonight-moon]
+name = "TokyoNight Moon"
+
+[tokyonight-night]
+name = "TokyoNight Night"
+
 [tokyonight-storm]
 name = "TokyoNight Storm"
+
+[tomorrow]
+name = "Tomorrow"
+
+[tomorrow-night]
+name = "Tomorrow Night"
+
+[tomorrow-night-blue]
+name = "Tomorrow Night Blue"
+
+[tomorrow-night-bright]
+name = "Tomorrow Night Bright"
+
+[tomorrow-night-burns]
+name = "Tomorrow Night Burns"
+
+[tomorrow-night-eighties]
+name = "Tomorrow Night Eighties"
+
+[toy-chest]
+name = "Toy Chest"
+
+[traffic]
+name = "traffic"
+
+[treehouse]
+name = "Treehouse"
+
+[twilight]
+name = "Twilight"
+
+[ubuntu]
+name = "Ubuntu"
+
+[ultra-dark]
+name = "Ultra Dark"
+
+[ultra-violent]
+name = "Ultra Violent"
+
+[under-the-sea]
+name = "Under The Sea"
+
+[unikitty]
+name = "Unikitty"
+
+[urban]
+name = "urban"
+
+[urple]
+name = "Urple"
+
+[vague]
+name = "Vague"
+
+[vaughn]
+name = "Vaughn"
+
+[vercel]
+name = "Vercel"
+
+[vesper]
+name = "Vesper"
+
+[vibrant-ink]
+name = "Vibrant Ink"
+
+[vimbones]
+name = "Vimbones"
+
+[violet-dark]
+name = "Violet Dark"
+
+[violet-light]
+name = "Violet Light"
+
+[violite]
+name = "Violite"
+
+[warm-neon]
+name = "Warm Neon"
+
+[wez]
+name = "Wez"
+
+[whimsy]
+name = "Whimsy"
+
+[wild-cherry]
+name = "Wild Cherry"
+
+[wilmersdorf]
+name = "Wilmersdorf"
+
+[wombat]
+name = "Wombat"
+
+[wryan]
+name = "Wryan"
+
+[xcode-dark]
+name = "Xcode Dark"
+
+[xcode-dark-hc]
+name = "Xcode Dark hc"
+
+[xcode-light]
+name = "Xcode Light"
+
+[xcode-light-hc]
+name = "Xcode Light hc"
+
+[xcode-wwdc]
+name = "Xcode WWDC"
+
+[zenbones]
+name = "Zenbones"
+
+[zenbones-dark]
+name = "Zenbones Dark"
+
+[zenbones-light]
+name = "Zenbones Light"
+
+[zenburn]
+name = "Zenburn"
+
+[zenburned]
+name = "Zenburned"
+
+[zenwritten-dark]
+name = "Zenwritten Dark"
+
+[zenwritten-light]
+name = "Zenwritten Light"
