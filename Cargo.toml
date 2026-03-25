@@ -1,7 +1,18 @@
 [package]
-name = "hue"
+name = "hue-cli"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "CLI to synchronise themes across Zed and Ghostty"
+repository = "https://github.com/howenyap/hue"
+
+[lib]
+name = "hue"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hue"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.102"
