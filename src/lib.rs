@@ -7,9 +7,9 @@ pub mod error;
 pub mod target;
 pub mod ui;
 
-use catalog::{init_catalog, load_catalog};
+use catalog::load_catalog;
 use cli::{Cli, Command, SetArgs};
-use config::{Paths, init_config, load_config, save_config};
+use config::{Paths, load_config, reset_config, save_config};
 use error::{Error, Result};
 use target::set_theme;
 use ui::render_theme_table;
@@ -18,12 +18,10 @@ pub fn run() -> Result<()> {
     let cli = Cli::parse();
     let paths = Paths::new()?;
 
-    init_config(&paths)?;
-    init_catalog(&paths)?;
-
     match cli.command {
         Command::List => list_themes(&paths),
         Command::Current => show_current_theme(&paths),
+        Command::Reset => handle_reset(&paths),
         Command::Set(args) => handle_set_theme(&paths, args),
     }
 }
@@ -62,6 +60,12 @@ fn handle_set_theme(paths: &Paths, args: SetArgs) -> Result<()> {
         config.current_theme = Some(theme);
         save_config(paths, &config)?;
     }
+
+    Ok(())
+}
+
+fn handle_reset(paths: &Paths) -> Result<()> {
+    reset_config(paths)?;
 
     Ok(())
 }

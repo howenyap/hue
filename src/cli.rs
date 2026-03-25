@@ -17,6 +17,8 @@ pub enum Command {
     List,
     #[command(about = "Show current theme")]
     Current,
+    #[command(about = "Resets the config for Hue")]
+    Reset,
     #[command(about = "Set the current theme")]
     Set(SetArgs),
 }

@@ -18,8 +18,8 @@ pub struct Config {
 
 pub struct Paths {
     pub home: PathBuf,
-    pub root: PathBuf,
-    pub config: PathBuf,
+    pub hue_root: PathBuf,
+    pub config_file: PathBuf,
     pub themes_dir: PathBuf,
 }
 
@@ -34,19 +34,19 @@ impl Paths {
 
         Ok(Self {
             home,
-            config: root.join(CONFIG_FILE),
+            config_file: root.join(CONFIG_FILE),
             themes_dir: root.join(THEMES_DIR),
-            root,
+            hue_root: root,
         })
     }
 }
 
 pub fn init_config(paths: &Paths) -> Result<()> {
-    if paths.config.exists() {
+    if paths.config_file.exists() {
         return Ok(());
     }
 
-    fs::create_dir_all(&paths.root)?;
+    fs::create_dir_all(&paths.hue_root)?;
 
     let config = Config::default();
     save_config(paths, &config)?;
@@ -57,7 +57,7 @@ pub fn init_config(paths: &Paths) -> Result<()> {
 pub fn load_config(paths: &Paths) -> Result<Config> {
     init_config(paths)?;
 
-    let config_str = fs::read_to_string(&paths.config)?;
+    let config_str = fs::read_to_string(&paths.config_file)?;
     let config_toml = toml::from_str(&config_str)?;
 
     Ok(config_toml)
@@ -66,7 +66,15 @@ pub fn load_config(paths: &Paths) -> Result<Config> {
 pub fn save_config(paths: &Paths, config: &Config) -> Result<()> {
     let config_str = toml::to_string_pretty(config)?;
 
-    fs::write(&paths.config, config_str)?;
+    fs::write(&paths.config_file, config_str)?;
+
+    Ok(())
+}
+
+pub fn reset_config(paths: &Paths) -> Result<()> {
+    if paths.hue_root.exists() {
+        fs::remove_dir_all(&paths.hue_root)?;
+    }
 
     Ok(())
 }
