@@ -90,9 +90,7 @@ impl Target {
                 // SIGUSR2 to reload ghostty config.
                 // Refer to https://github.com/ghostty-org/ghostty/issues/7747.
                 Self::Ghostty => {
-                    let _ = Command::new("pkill")
-                        .args(["-USR2", "-x", "ghostty"])
-                        .status();
+                    let _ = Command::new("killall").args(["-USR2", "ghostty"]).status();
                 }
                 // SIGUSR1 to reload helix config
                 // Refer to https://github.com/helix-editor/helix/issues/2158#issuecomment-1910775800
