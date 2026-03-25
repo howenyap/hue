@@ -1,5 +1,6 @@
 use std::fs;
 use std::path::{Path, PathBuf};
+use std::process::Command;
 
 use jsonc_parser::ParseOptions;
 use jsonc_parser::cst::{CstInputValue, CstRootNode};
@@ -84,12 +85,23 @@ impl Target {
         let updated = self.apply_theme(&original, theme)?;
         let changed = write_target(&path, *self, &original, &updated, dry_run)?;
 
-        // SIGUSR2 to reload ghostty config
-        // refer to https://github.com/ghostty-org/ghostty/issues/7747
-        if changed && !dry_run && matches!(self, Self::Ghostty) {
-            let _ = std::process::Command::new("killall")
-                .args(["-USR2", "ghostty"])
-                .status();
+        if changed && !dry_run {
+            match self {
+                // SIGUSR2 to reload ghostty config.
+                // Refer to https://github.com/ghostty-org/ghostty/issues/7747.
+                Self::Ghostty => {
+                    let _ = Command::new("pkill")
+                        .args(["-USR2", "-x", "ghostty"])
+                        .status();
+                }
+                // SIGUSR1 to reload helix config
+                // Refer to https://github.com/helix-editor/helix/issues/2158#issuecomment-1910775800
+                Self::Helix => {
+                    let _ = Command::new("pkill").args(["-USR1", "-x", "hx"]).status();
+                }
+                // Zed hot reloads
+                Self::Zed => {}
+            }
         }
 
         Ok(true)
