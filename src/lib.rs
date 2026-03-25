@@ -1,4 +1,5 @@
 use clap::Parser;
+use strsim::jaro_winkler;
 
 pub mod catalog;
 pub mod cli;
@@ -8,7 +9,7 @@ pub mod target;
 pub mod ui;
 
 use catalog::load_catalog;
-use cli::{Cli, Command, SetArgs};
+use cli::{Cli, Command, SearchArgs, SetArgs};
 use config::{Paths, load_config, reset_config, save_config};
 use error::{Error, Result};
 use target::set_theme;
@@ -21,6 +22,7 @@ pub fn run() -> Result<()> {
     match cli.command {
         Command::Config => show_config_dir(&paths),
         Command::List => list_themes(&paths),
+        Command::Search(args) => search_themes(&paths, args),
         Command::Current => show_current_theme(&paths),
         Command::Reset => handle_reset(&paths),
         Command::Set(args) => handle_set_theme(&paths, args),
@@ -39,8 +41,68 @@ fn list_themes(paths: &Paths) -> Result<()> {
 
     println!(
         "{}",
-        render_theme_table(config.current_theme.as_deref(), &catalog)
+        render_theme_table(
+            config.current_theme.as_deref(),
+            catalog
+                .iter()
+                .map(|(name, mapping)| (name.as_str(), mapping)),
+        )
     );
+
+    Ok(())
+}
+
+struct ThemeSearchMatch<'a> {
+    theme_name: String,
+    mapping: &'a catalog::ThemeMapping,
+    score: f64,
+}
+
+fn search_themes(paths: &Paths, args: SearchArgs) -> Result<()> {
+    let SearchArgs { query, limit } = args;
+
+    let config = load_config(paths)?;
+    let catalog = load_catalog(paths)?;
+    let query = query.trim().to_lowercase();
+
+    let matches = {
+        let mut matches = catalog
+            .iter()
+            .filter_map(|(theme, mapping)| {
+                const MIN_SEARCH_SCORE: f64 = 0.70;
+                let score = jaro_winkler(&query, &theme.trim().to_lowercase());
+
+                (score >= MIN_SEARCH_SCORE).then(|| ThemeSearchMatch {
+                    theme_name: theme.clone(),
+                    score,
+                    mapping,
+                })
+            })
+            .collect::<Vec<_>>();
+
+        matches.sort_by(|left, right| {
+            right
+                .score
+                .total_cmp(&left.score)
+                .then_with(|| left.theme_name.cmp(&right.theme_name))
+        });
+
+        matches.truncate(limit.max(1));
+        matches
+    };
+
+    if matches.is_empty() {
+        println!("No matches found for `{query}`.");
+    } else {
+        let table = render_theme_table(
+            config.current_theme.as_deref(),
+            matches
+                .iter()
+                .map(|item| (item.theme_name.as_str(), item.mapping)),
+        );
+
+        println!("{table}",);
+    }
 
     Ok(())
 }

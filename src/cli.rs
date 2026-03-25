@@ -17,6 +17,8 @@ pub enum Command {
     Config,
     #[command(about = "List available themes")]
     List,
+    #[command(about = "Search available themes")]
+    Search(SearchArgs),
     #[command(about = "Show current theme")]
     Current,
     #[command(about = "Resets the config for Hue")]
@@ -30,4 +32,15 @@ pub struct SetArgs {
     pub theme: String,
     #[arg(long, help = "Preview changes")]
     pub dry_run: bool,
+}
+
+#[derive(Args)]
+pub struct SearchArgs {
+    pub query: String,
+    #[arg(
+        long,
+        default_value_t = 10,
+        help = "Maximum number of matches to print"
+    )]
+    pub limit: usize,
 }

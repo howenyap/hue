@@ -1,4 +1,3 @@
-use std::collections::BTreeMap;
 use std::iter::once;
 use std::path::Path;
 
@@ -9,10 +8,10 @@ use similar::TextDiff;
 use crate::catalog::ThemeMapping;
 use crate::target::Target;
 
-pub fn render_theme_table(
-    current_theme: Option<&str>,
-    catalog: &BTreeMap<String, ThemeMapping>,
-) -> String {
+pub fn render_theme_table<'a, I>(current_theme: Option<&str>, themes: I) -> String
+where
+    I: IntoIterator<Item = (&'a str, &'a ThemeMapping)>,
+{
     let mut table = DisplayTable::new();
 
     table
@@ -24,11 +23,11 @@ pub fn render_theme_table(
                 .collect::<Vec<_>>(),
         );
 
-    for (name, mapping) in catalog {
-        let theme_name = if current_theme == Some(name.as_str()) {
+    for (name, mapping) in themes {
+        let theme_name = if current_theme == Some(name) {
             format!("{name} (current)")
         } else {
-            name.clone()
+            name.to_string()
         };
 
         table.add_row(

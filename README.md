@@ -27,6 +27,8 @@ Please create an issue or PR if you'd like to add support for other targets.
 # Usage
 - `hue current` prints out the current set theme
 - `hue list` prints out available themes
+- `hue search <query>` prints the closest matching themes
+- `hue search <query> --limit <n>` limits the number of results
 - `hue reset` removes `~/.config/hue`, it will be lazily reinitiliased by other commands
 - `hue set <theme>` sets a logical theme and synchronises it across targets
 - `hue set <theme> --dry-run` shows a diff of the update without applying any changes
