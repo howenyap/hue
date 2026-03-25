@@ -10,7 +10,13 @@ Currently, Hue supports the following targets:
 Please create an issue or PR if you'd like to add support for other targets.
 
 # Installation
+## Cargo
 `cargo install hue-cli`
+
+## Brew
+`brew tap howenyap/tap`
+
+`brew install hue`
 
 # Usage
 - `hue current` prints out the current set theme
